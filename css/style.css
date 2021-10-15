@@ -69,6 +69,14 @@ nav {
 
 /* SECTION  */
 /* section 1  */
+.special-section {
+    padding: 140px 0 70px 0;
+}
+section {
+
+    /* test  */
+    padding: 70px 0;
+}
 .container-section {
 
     /* test  */
@@ -82,7 +90,9 @@ nav {
     /* test  */
     font-size: 40px;
     background-color: wheat;
-    margin-top: 20px;
+    border: 1px solid black;
+    margin-bottom: 40px;
+    /* margin-top: 20px; */
 }
 .clearfix .col.border-test {
 
@@ -104,3 +114,113 @@ nav {
     height: 100px;
     margin-top: 45px;
 }
+
+/* section 2  */
+.col.partners-test {
+    
+    /* test  */
+    width: 50%;
+    background-color: darkolivegreen;
+    height: 300px ;
+    border: 1px solid blue ;
+}
+
+/* section 3  */
+.row-cols-business {
+
+    /* test  */
+    padding: 40px 0;
+}
+.col.business-test {
+
+    /* test  */
+    width: calc(100% / 3);
+    background-color: brown;
+    height: 200px;
+    border: 1px solid black;
+}
+
+/* section 4  */
+.link-test {
+
+    /* test  */
+    padding-bottom: 40px;
+}
+.logo-table {
+
+    /* test  */
+    /* children w/out height collapse */
+    /* height: 400px;       */
+}
+.logo-table .col.partners-logo {
+
+    /* test  */
+    width: 30%;
+    background-color: chocolate;
+    
+
+}
+.logo-table .col.partners-text {
+
+    /* test  */
+    width: 40%;
+    background-color: darkgoldenrod;
+    height: 400px;
+}
+
+/* TEST FLOAT IN SECTION 4 LOGO TABLE  */
+.logo-test {
+
+    height: 200px;
+    width: 50%;
+    border: 1px solid black;
+}
+.logo-test,
+.two-row-test {
+    color: white;
+}
+/* row test  */
+.first-row {
+    /* height: 200px; */
+}
+.two-row-test {
+    height: 200px;
+    width: 50%;
+    background-color: darkgreen;
+    border: 1px solid black;
+}
+.second-row-test .two-row-test {
+    height: 200px;
+    height: 50%;
+    background-color: darkkhaki;
+    border: 1px solid black;
+}
+/* END TEST SECTION 4-------------------  */
+
+/* section 5  */
+.bordering-edges {
+    padding-bottom: 0;
+}
+.back-lightblue {
+    background-color: #b4d0e7;
+    padding-top: 0;
+}
+
+/* FOOTER  */
+footer {
+    background-color: #000000;
+
+    /* test  */
+    height: 400px;
+}
+.footer-container {
+    width: 72%;
+    margin: auto;
+
+    /* test  */
+    color: white;
+}
+ /* test  */
+ .footer-container * {
+     border: 1px solid white;
+ }
