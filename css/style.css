@@ -4,7 +4,103 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 /* COMMON  */
 body {
     font-family: 'Open Sans', sans-serif;
+}
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.col {
+    float: left;
+}
+/* HEADER  */
+header {
+    background-color: #ffffff;
+
+    /* test  */
+    height: 80px;
+}
+nav {
+    /* test  */
+    line-height: 80px;
+}
+
+/* MAIN  */
+.jumbotron {
+    background-color: #b4d0e7;
+
+    /* test  */
+    height: 744px;
+}
+.jumbo-content {
+    
+    /* test  */
+    background-color: tomato;
+    width: 75%;
+    margin: auto;
+    height: 625px;
+    padding: 100px 0;
+}
+.jumbo-content h1 {
+
+    /* test  */
+    font-size: 70px ;
+}
+/* jumbo content cols  */
+.test-text {
+
+    /* test  */
+    background-color: violet;
+    width: 40%;
+    height: 100px;
+}
+.test-img {
+
+    /* test  */
+    width: 60%;
+    background-color: wheat;
+    height: 100px;
+}
+/* end jumbo cols  */
+
+/* SECTION  */
+/* section 1  */
+.container-section {
+
+    /* test  */
+    width: 60%;
+    margin: auto;
+    background-color: yellowgreen;
+    /* height: 500px; */
+}
+.section-title h2 {
+
+    /* test  */
+    font-size: 40px;
+    background-color: wheat;
+    margin-top: 20px;
+}
+.clearfix .col.border-test {
+
+    /* test  */
+    width: 30%;
+    background-color: darkcyan;
+    height: 600px;
+    border: 1px solid red;
+}
+.bigger-test {
+    
+    /* test  */
+    margin: 0 5%;
+}
+.test-enterprise {
+
+    /* test  */
+    background-color: darkgrey;
+    height: 100px;
+    margin-top: 45px;
 }
