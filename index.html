@@ -5,18 +5,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dropbox</title>
-
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;0,800;1,400&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-    <!-- header fixed  -->
+    <!-- start header  -->
     <header>
-        <!-- nav with 2 cols  -->
+        
         <nav>
-            menu
+            <!-- top menu  -->
+            <div class="top-menu clearfix">
+                <!-- left side top menu  -->
+                <div class="col col-50 top-menu-left">
+
+                    <ul>
+                        <li>
+                            <a href="#"> <img class="logo" src="img/logo-small.png" alt="Logo dropbox"></a>
+                        </li>
+                        <li>
+                            <a class="black-text" href="#">Perché Dropbox?</a>
+                        </li>
+                        <li>
+                            <a class="black-text" href="#">Funzioni</a>
+                        </li>
+                        <li>
+                            <a class="black-text" href="#">Piani e prezzi</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- right side top menu  -->
+                <div class="col col-50 top-menu-right">
+                    
+                    <ul>
+                        <li>
+                            <a class="black-text" href="#">Supporto</a>
+                        </li>
+                        <li>
+                            <a class="black-text" href="#">Contatta l'ufficio vendite</a>
+                        </li>
+                        <li>
+                            <a class="black-text" href="#">Accedi</a>
+                        </li>
+                        <li>
+                            <a class="btn btn-small btn-blue btn-blue-trans" href="#">Inizia</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
     <!-- end header  -->
@@ -25,23 +64,40 @@
     <main>
         <!-- start jumbotron -->
         <div class="jumbotron">
-            <!-- start jumbo-content w/container -->
+            <!-- start container jumbo content  -->
             <div class="jumbo-content">
                 <!-- title  -->
-                <h1>
-                    Tutto <br> in 
-                </h1>
-                <!-- 2 cols  -->
+                <div class="title">
+                    
+                    <h1>Tutto ciò che ti serve per il lavoro, in un unico posto</h1>
+                </div>
+                <!-- cta and image  -->
                 <div class="clearfix">
-                    <div class="col test-text">
 
+                    <div class="col jumbo-cta">
+                        
+                        <div class="cta-text">
+                            <p>Finalmente tutti i tuoi strumenti, contenuti e collaboratori sono accessibili dallo stesso posto. Dropbox Business è più di uno spazio di archiviazione sicuro: è un modo intelligente e integrato per ottimizzare il flusso di lavoro esistente.</p>
+                        </div>
+                        <!-- link trial -->
+                        <div>
+                            <a class="btn btn-large btn-blue btn-blue-trans" href="#">Inizia la prova gratuita</a>
+                        </div>
+                        <span class="cancel">Annulla in qualsiasi momento</span>
+
+                        <!-- go down icon  -->
+                        <div class="go-down">
+                            <i class="fas fa-arrow-down"></i>
+                        </div>
                     </div>
-                    <div class="col test-img">
 
+                    <div class="col jumbo-img">
+
+                        <img src="img/jumbo.png" alt="Dropbox tools">
                     </div>
                 </div>
             </div>
-            <!-- end jumbo-content  -->
+            <!-- end container jumbo-content  -->
         </div>
         <!-- end jumbotron  -->
 
@@ -240,9 +296,9 @@
             <!-- languages row  -->
             <div>
 
-            </div>
-            <!-- end container  -->
+            </div> 
         </div>
+        <!-- end container  -->
     </footer>
 </body>
 </html>

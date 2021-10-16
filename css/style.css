@@ -14,56 +14,130 @@ body {
     display: table;
     clear: both;
 }
+/* columns  */
 .col {
     float: left;
 }
+.col-50 {
+    width: 50%;
+}
+/* buttons REMEMBER ADD HOVER TO BUTTONS grey */
+.btn {
+    display: inline-block;
+    text-decoration: none;
+}
+.btn-small {
+    padding: 6px 16px;
+    line-height: normal;
+    font-size: 15px;
+}
+.btn-large {
+    padding: 8px 16px;
+}
+.btn-blue {
+    background-color: #0061ff;
+    color: #ffffff;
+}
+/* buttons effects  */
+.btn-blue-trans {
+    transition: background-color 1s;
+}
+.btn-blue-trans:hover {
+    background-color: #3c84ff;
+}
+/* text  */
+.black-text {
+    color: #000000;
+}
+/* images  */
+img {
+    width: 100%;
+}
 /* HEADER  */
 header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     background-color: #ffffff;
-
-    /* test  */
     height: 80px;
 }
+/* NAV  */
 nav {
-    /* test  */
     line-height: 80px;
 }
-
+.top-menu li {
+    display: inline-block;
+    list-style-type: none;
+    margin: 0 20px;
+}
+.top-menu a {
+    text-decoration: none;
+    display: inline-block;   
+}
+.top-menu a.black-text:hover {
+    border-bottom: 2px solid #000000;
+}
+.top-menu-left .logo {
+    vertical-align: text-bottom;
+}
+.top-menu-right {
+    text-align: right;
+}
 /* MAIN  */
 .jumbotron {
+    margin: 80px 0;
     background-color: #b4d0e7;
-
-    /* test  */
-    height: 744px;
 }
 .jumbo-content {
-    
-    /* test  */
-    background-color: tomato;
     width: 75%;
     margin: auto;
-    height: 625px;
-    padding: 100px 0;
+    padding-top: 100px;  
+    /* test  */
+    /* background-color: tomato; */
 }
-.jumbo-content h1 {
+.jumbo-content .title > h1 {
+    font-size: 80px ;
+}
+/* jumbo content cols   */
+.jumbo-content .clearfix {
+    margin-top: 35px;
 
     /* test  */
-    font-size: 70px ;
+    height: 440px;
 }
-/* jumbo content cols  */
-.test-text {
+/* jumbo cta col */
+.jumbo-cta {
+    width: 35%;
 
     /* test  */
-    background-color: violet;
-    width: 40%;
-    height: 100px;
+    /* background-color: violet; */  
 }
-.test-img {
+.jumbo-cta .cta-text {
+    padding: 0 101px 25px 0;
+
+}
+.jumbo-cta span.cancel {
+    display: inline-block;
+    font-size: 14px;
+    margin: 10px 0 40px 0;
+}
+.jumbo-cta .go-down > i {
+    font-size: 40px;
+}
+/* jumbo image col  */
+.jumbo-img {
+    width: 65%;
 
     /* test  */
-    width: 60%;
-    background-color: wheat;
-    height: 100px;
+    max-height: 100%;
+    overflow: visible;
+    /* background-color: wheat; */
+}
+.jumbo-img img {
+    
+    /* test  */
+
 }
 /* end jumbo cols  */
 
