@@ -18,8 +18,14 @@ body {
 .col {
     float: left;
 }
+.col-30 {
+    width: 30%;
+}
 .col-50 {
     width: 50%;
+}
+.col-70 {
+    width: 70%;
 }
 /* buttons REMEMBER ADD HOVER TO BUTTONS grey */
 .btn {
@@ -38,6 +44,11 @@ body {
     background-color: #0061ff;
     color: #ffffff;
 }
+.btn-white {
+    border: 1px solid #000000;
+    background-color: #ffffff;
+    color: #000000;
+}
 /* buttons effects  */
 .btn-blue-trans {
     transition: background-color 1s;
@@ -45,13 +56,26 @@ body {
 .btn-blue-trans:hover {
     background-color: #3c84ff;
 }
+.btn-white-trans {
+    transition: background-color 1s;
+}
+.btn-white-trans:hover {
+    background-color: #d0d0d3;
+}
 /* text  */
 .black-text {
     color: #000000;
 }
+.text-small {
+    font-size: 14px;
+}
 /* images  */
 img {
     width: 100%;
+}
+/* lists  */
+ul {
+    list-style-type: none;
 }
 /* HEADER  */
 header {
@@ -99,6 +123,7 @@ nav {
 .jumbo-content .title > h1 {
     font-size: 80px ;
 }
+
 /* jumbo content cols   */
 .jumbo-content .clearfix {
     margin-top: 35px;
@@ -106,6 +131,7 @@ nav {
     /* test  */
     height: 440px;
 }
+
 /* jumbo cta col */
 .jumbo-cta {
     width: 35%;
@@ -125,24 +151,30 @@ nav {
 .jumbo-cta .go-down > i {
     font-size: 40px;
 }
+
 /* jumbo image col  */
 .jumbo-img {
     width: 65%;
 
     /* test  */
-    max-height: 100%;
-    overflow: visible;
+    /* max-height: 100%; */
+    /* overflow: visible; */
     /* background-color: wheat; */
+}
+.jumbo-img .test {
+    /* test  */
+    overflow: visible;
 }
 .jumbo-img img {
     
     /* test  */
 
 }
-/* end jumbo cols  */
 
 /* SECTION  */
+
 /* section 1  */
+
 .special-section {
     padding: 140px 0 70px 0;
 }
@@ -152,51 +184,151 @@ section {
     padding: 70px 0;
 }
 .container-section {
-
-    /* test  */
     width: 60%;
     margin: auto;
-    background-color: yellowgreen;
+    /* test  */
+    
+    /* background-color: yellowgreen; */
     /* height: 500px; */
 }
-.section-title h2 {
-
+.container-offer {
+    width: 80%;
+    margin: auto;
+    padding-bottom: 150px;
     /* test  */
+    /* background-color: aquamarine; */
+}
+
+.container-offer .btn {
+    width: 100%;
+    text-align: center;
+}
+.section-title h2 {
     font-size: 40px;
-    background-color: wheat;
-    border: 1px solid black;
     margin-bottom: 40px;
+    /* test  */
+    
+    /* background-color: wheat; */
+    /* border: 1px solid black; */
+    
     /* margin-top: 20px; */
 }
-.clearfix .col.border-test {
-
-    /* test  */
-    width: 30%;
-    background-color: darkcyan;
-    height: 600px;
-    border: 1px solid red;
+.pay-method input[type=checkbox] {
+    width: 20px;
+    height: 20px;
 }
-.bigger-test {
-    
+
+/* columns plans  */
+
+.plans-box {
+    margin-top: 30px;
+}
+.clearfix .col-plans {
+    width: 30%;
+    border: 1px solid #d0d0d3;
     /* test  */
+    /* background-color: darkcyan; */
+    /* height: 600px; */  
+}
+.clearfix .col.col-margin {
     margin: 0 5%;
 }
-.test-enterprise {
+
+/* top col plan  */
+
+.col-plans .plan-type,
+.sales-office .plan-type {
+    padding: 10px 0;
+    text-align: center;
+    border-bottom: 1px solid #d0d0d3;
+}
+.offer-type .title > h3 {
+    font-size: 26px;
+    margin: 20px 0 10px 0;
+}
+.offer-type .offer-price span {
+    display: block;
+    margin-bottom: 10px;
+}
+.offer-price .price {
+    font-weight: bold;
+}
+.offer-price .rate {
+    color: #697986;
+}
+.offer-type .list-offer {
+    margin: 40px 0;
+}
+.list-offer li {
+    margin-bottom: 20px;
+}
+/* middle col plan  */
+
+.col-plans .plan-cta::after {
+    display: block;
+    content: "";
+    width: 55px;
+    height: 1px;
+    background-color: #d0d0d3;
+    margin: 30px 0 40px 0;
+
+}
+.plan-cta span {
+    display: block;
+    margin-top: 20px;
+}
+a.unvisited:link, a.unvisited:visited {
+    color: #0061ff;
+}
+
+/* bottom col plan */
+
+.highlights .highlights-menu li {
+    margin: 20px 0;
+}
+.highlights .highlights-menu i {
+    color: #0061ff;
+}
+.highlights .highlights-menu.less-1-item li:last-child {
+    margin-bottom: 59px;
 
     /* test  */
-    background-color: darkgrey;
-    height: 100px;
+    /* background-color: black; */
+    /* NOTE (work with actual font-size): first multiplication is for number of line in one li, second multiplication is for number of missing li */
+    /* margin-bottom: calc(20px + ((19px * 1) + 20px) * 1); */
+}
+
+/* bottom row section 1 plan  */
+.container-section .sales-office {
     margin-top: 45px;
+    border: 1px solid #d0d0d3;
+    /* test  */
+    /* background-color: darkgrey; */
+}
+.sales-office .clearfix {
+    padding: 30px;
+} 
+.sales-office .title > h3 {
+    font-size: 26px;
+}
+.sales-office .title > h4 {
+    margin: 10px 0 25px 0;
+}
+.sales-office .btn {
+    width: 100%;
+    text-align: center;
 }
 
 /* section 2  */
-.col.partners-test {
-    
-    /* test  */
-    width: 50%;
-    background-color: darkolivegreen;
-    height: 300px ;
-    border: 1px solid blue ;
+
+.cta-partner .cta-text {
+    padding: 40px 0 0 40px;
+}
+.cta-text .title > h3 {
+    font-size: 26px;
+}
+.cta-text .title > p {
+    margin: 20px 0;
 }
 
 /* section 3  */
