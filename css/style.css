@@ -31,7 +31,7 @@ body {
 .col-70 {
     width: 70%;
 }
-/* buttons REMEMBER ADD HOVER TO BUTTONS grey */
+/* buttons */
 .btn {
     display: inline-block;
     text-decoration: none;
@@ -73,7 +73,6 @@ body {
 .text-small {
     font-size: 14px;
 }
-/* backgrounds color  */
 
 /* images  */
 img {
@@ -123,8 +122,6 @@ nav {
     width: 75%;
     margin: auto;
     padding-top: 100px;  
-    /* test  */
-    /* background-color: tomato; */
 }
 .jumbo-content .title > h1 {
     font-size: 80px ;
@@ -133,17 +130,11 @@ nav {
 /* jumbo content cols   */
 .jumbo-content .clearfix {
     margin-top: 35px;
-
-    /* test  */
-    height: 440px;
 }
 
 /* jumbo cta col */
 .jumbo-cta {
-    width: 35%;
-
-    /* test  */
-    /* background-color: violet; */  
+    width: 35%; 
 }
 .jumbo-cta .cta-text {
     padding: 0 101px 25px 0;
@@ -161,20 +152,21 @@ nav {
 /* jumbo image col  */
 .jumbo-img {
     width: 65%;
+}
+.jumbo-img .box-img {
 
     /* test  */
-    /* max-height: 100%; */
-    /* overflow: visible; */
-    /* background-color: wheat; */
+    /* padding: 220px; */
+    height: 440px;
+    /* background-color: cadetblue; */
+    /* position: relative; */
 }
-.jumbo-img .test {
-    /* test  */
-    overflow: visible;
-}
-.jumbo-img img {
+.jumbo-img .box-img > img {
     
     /* test  */
-
+    /* position: absolute;
+    top: 0;
+    left: 0; */
 }
 
 /* SECTION  */
@@ -192,17 +184,11 @@ section {
 .container-section {
     width: 60%;
     margin: auto;
-    /* test  */
-    
-    /* background-color: yellowgreen; */
-    /* height: 500px; */
 }
 .container-offer {
     width: 80%;
     margin: auto;
     padding-bottom: 150px;
-    /* test  */
-    /* background-color: aquamarine; */
 }
 
 .container-offer .btn {
@@ -212,12 +198,6 @@ section {
 .section-title h2 {
     font-size: 40px;
     margin-bottom: 40px;
-    /* test  */
-    
-    /* background-color: wheat; */
-    /* border: 1px solid black; */
-    
-    /* margin-top: 20px; */
 }
 .pay-method .rounded {
     width: 18px;
@@ -241,9 +221,6 @@ section {
 .clearfix .col-plans {
     width: 30%;
     border: 1px solid #d0d0d3;
-    /* test  */
-    /* background-color: darkcyan; */
-    /* height: 600px; */  
 }
 
 /* top col plan  */
@@ -325,8 +302,6 @@ a.unvisited:link, a.unvisited:visited {
 .container-section .sales-office {
     margin-top: 45px;
     border: 1px solid #d0d0d3;
-    /* test  */
-    /* background-color: darkgrey; */
 }
 .sales-office .clearfix {
     padding: 30px;
@@ -366,11 +341,6 @@ a.unvisited:link, a.unvisited:visited {
 }
 .operations .col-30 .box-image {
     height: 250px;
-
-    /* test  */
-    /* background-color: brown; */
-    /* height: 200px; */
-    /* border: 1px solid black; */
 }
 .box-image img {
     width: 100%;
@@ -412,12 +382,9 @@ a.unvisited:link, a.unvisited:visited {
     width: 100%;
     height: 100%;
     object-fit: contain;
-    object-position: center;  
+    object-position: center;
+    filter: invert(1);  
 }
-/* svg {
-    color: #ffffff;
-    fill: #ffffff;
-} */
 
 /* background color and effects for single customer  */
 .customer-designit {
@@ -489,21 +456,72 @@ a.unvisited:link, a.unvisited:visited {
     width: 90%;
     text-align: center;
 }
+
+/* section 6  */
+.faq.section-title > h4 {
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+.faq-row {
+    line-height: 80px;
+    border-bottom: 1px solid #d0d0d3;
+}
+.faq-row.border-top {
+    border-top: 1px solid #d0d0d3;
+}
+.faq-row .col.question {
+    width: 95%;
+    font-weight: 600;
+}
+.faq-row .col.menu-icon {
+    width: 5%;
+    text-align: center;
+}
+.faq-row .col.menu-icon > i {
+    cursor: pointer;
+}
+
 /* FOOTER  */
 footer {
     background-color: #000000;
-
-    /* test  */
-    height: 400px;
+    padding: 70px 0;
 }
 .footer-container {
     width: 72%;
     margin: auto;
-
-    /* test  */
-    color: white;
 }
- /* test  */
- .footer-container * {
-     border: 1px solid white;
- }
+.footer-menu .col {
+    width: calc(100% / 5)
+}
+.footer-menu {
+    color: #ffffff;
+}
+.footer-menu  h5 {
+    font-size: 20px;
+}
+.footer-menu ul {
+    margin: 20px 0;
+}
+.footer-menu li {
+    margin-bottom: 10px;
+}
+.footer-menu li > a {
+    text-decoration: none;
+    color: #ffffff;
+}
+.languages::before {
+    display: block;
+    content: "";
+    width: 100px;
+    height: 1px;
+    background-color: #d0d0d3;
+    margin: 50px 0 30px 0;
+}
+.languages {
+    color: #999999;
+    vertical-align: middle;
+}
+.languages span.xs {
+    font-size: 13px;
+    display: inline-block;
+}
